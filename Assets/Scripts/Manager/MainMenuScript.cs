@@ -8,7 +8,8 @@ namespace Manager
     {
         public override void GotoScene(string scene)
         {
-            base.GotoScene(scene);
+            GameData.Metode = "Menu" + scene;
+            base.GotoScene("MenuMateri");
         }
     }
 }

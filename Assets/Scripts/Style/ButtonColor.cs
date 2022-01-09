@@ -1,31 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Manager;
 
 public class ButtonColor : MonoBehaviour
 {
-    [SerializeField] MetodeBelajar metode;
+    [SerializeField] protected MetodeBelajar metode;
     [SerializeField] Button button;
     [SerializeField] TextMeshProUGUI text;
 
     private void Start()
     {
-        if (button == null) button = GetComponent<Button>();
-        if (text == null) text = GetComponentInChildren<TextMeshProUGUI>();
-
+        InitComponent();
         NewButtonColor();
     }
 
-    private ColorBlock NewColorBlock(MetodeBelajar metode)
+    protected virtual void InitComponent()
+    {
+        if (button == null) button = GetComponent<Button>();
+        if (text == null) text = GetComponentInChildren<TextMeshProUGUI>();
+    }
+
+    private ColorAccents NewAccents()
+    {
+        return HelperScript.Accents(metode);
+    }
+
+    private ColorBlock NewColorBlock()
     {
         ColorBlock newColorBlock = button.colors;
-        newColorBlock.normalColor = UIManagers.SetAccent(metode).primary;
-        newColorBlock.highlightedColor = UIManagers.SetAccent(metode).accent_2;
-        newColorBlock.pressedColor = UIManagers.SetAccent(metode).secondary;
-        newColorBlock.selectedColor = UIManagers.SetAccent(metode).tertiary;
+
+        newColorBlock.normalColor = NewAccents().primary;
+        newColorBlock.highlightedColor = NewAccents().accent_2;
+        newColorBlock.pressedColor = NewAccents().secondary;
+        newColorBlock.selectedColor = NewAccents().tertiary;
         newColorBlock.disabledColor = button.colors.disabledColor;
 
         return newColorBlock;
@@ -33,7 +40,7 @@ public class ButtonColor : MonoBehaviour
 
     void NewButtonColor()
     {
-        button.colors = NewColorBlock(metode);
-        text.color = UIManagers.SetAccent(metode).fontPrimary;
+        button.colors = NewColorBlock();
+        text.color = NewAccents().fontPrimary;
     }
 }

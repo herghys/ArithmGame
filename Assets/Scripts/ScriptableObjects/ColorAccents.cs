@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New_Accent", menuName = "Color Accent")]
 public class ColorAccents : ScriptableObject
 {
+    [Header("Name")]
+    public string accentName;
+
     [Header("Main Color")]
     public Color primary;
     public Color secondary;

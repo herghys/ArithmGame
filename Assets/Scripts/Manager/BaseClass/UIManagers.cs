@@ -8,19 +8,15 @@ namespace Manager
         [Header("Reference")]
         public Managers manager;
 
-        /*//[Header("Color Lists")]
-        //public List<ColorAccents> accents = new List<ColorAccents>();
-
-        //public static UIManagers instance;
-
-        private void Awake()
-        {
-            //if (instance == null) instance = this;
-        }*/
-
         private void Start()
         {
             if (manager == null) manager = GetComponent<Managers>();
+        }
+
+        public void SetActive(GameObject gameObject)
+        {
+            if(gameObject.activeSelf) gameObject.SetActive(false);
+            else gameObject.SetActive(true);    
         }
     }
 }

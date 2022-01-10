@@ -10,6 +10,5 @@ namespace Manager
         {
             Debug.Log(GameData.Metode);
         }
-
     }
 }

@@ -22,4 +22,6 @@ public class ColorAccents : ScriptableObject
     public Color fontAccent_1;
     public Color fontAccent_2;
     public Color fontAccent_3;
+
+    public Color buttonDisabled = Color.gray;
 }

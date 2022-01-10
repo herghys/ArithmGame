@@ -10,6 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce8c44b1748fc3443b07822d93107201, type: 3}
-  m_Name: MenuInsting
+  m_Name: Materi_Insting
   m_EditorClassIdentifier: 
   metode: Insting
+  materiPrefab: {fileID: 0}
+  backgrounSprite: {fileID: 0}
+  accent: {fileID: 11400000, guid: 3c532095aca1acb43a7a6e27931af880, type: 2}

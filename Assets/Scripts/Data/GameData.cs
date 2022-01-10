@@ -1,14 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class GameData
+public class GameData
 {
+    static GameData() { }
+
     static MetodeBelajar metode;
+    static MateriData materi;
 
     //static string metode;
     #region Get-Setter
     public static MetodeBelajar Metode { get => metode; set => metode = value; }
+    public static MateriData Materi { get => materi; set => materi = value; }
     //public static string Metode { get => metode; set => metode = value; }
     #endregion
 }

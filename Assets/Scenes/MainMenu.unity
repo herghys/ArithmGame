@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 342375062}
   - component: {fileID: 342375061}
   - component: {fileID: 342375060}
-  - component: {fileID: 342375063}
+  - component: {fileID: 342375064}
   m_Layer: 5
   m_Name: Button_Intuiting
   m_TagString: Untagged
@@ -258,7 +258,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342375058}
   m_CullTransparentMesh: 1
---- !u!114 &342375063
+--- !u!114 &342375064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 342375058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6744201111f8d4387a2853d1845c64, type: 3}
+  m_Script: {fileID: 11500000, guid: b89203a71fdea9b40b6077aef6e59333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   metode: 3
@@ -1457,7 +1457,7 @@ GameObject:
   - component: {fileID: 1241553186}
   - component: {fileID: 1241553185}
   - component: {fileID: 1241553184}
-  - component: {fileID: 1241553187}
+  - component: {fileID: 1241553188}
   m_Layer: 5
   m_Name: Button_Sensing
   m_TagString: Untagged
@@ -1580,7 +1580,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241553182}
   m_CullTransparentMesh: 1
---- !u!114 &1241553187
+--- !u!114 &1241553188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1241553182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6744201111f8d4387a2853d1845c64, type: 3}
+  m_Script: {fileID: 11500000, guid: b89203a71fdea9b40b6077aef6e59333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   metode: 1
@@ -1938,12 +1938,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1747867248}
-  accents:
-  - {fileID: 11400000, guid: f8b0c354f13a28c4e994916f1509aa45, type: 2}
-  - {fileID: 11400000, guid: 4434c8be44ee8f14f8e20f79d79783a7, type: 2}
-  - {fileID: 11400000, guid: 3147d1e8a1d5aec4681f6e6c0a807ccf, type: 2}
-  - {fileID: 11400000, guid: 75e6bb3cb739d8f4391df97d08d460c1, type: 2}
-  - {fileID: 11400000, guid: 3c532095aca1acb43a7a6e27931af880, type: 2}
 --- !u!1 &1790220419
 GameObject:
   m_ObjectHideFlags: 0

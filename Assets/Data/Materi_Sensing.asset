@@ -10,6 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce8c44b1748fc3443b07822d93107201, type: 3}
-  m_Name: MenuThinking
+  m_Name: Materi_Sensing
   m_EditorClassIdentifier: 
-  metode: Thinking
+  metode: Sensing
+  materiPrefab: {fileID: 0}
+  backgrounSprite: {fileID: 0}
+  accent: {fileID: 11400000, guid: f8b0c354f13a28c4e994916f1509aa45, type: 2}

@@ -16,9 +16,10 @@ public class ButtonColorChanger : ColorChanger
     {
         ColorBlock newBlock = button.colors;
         newBlock.normalColor = Accents().primary;
-        newBlock.highlightedColor = Accents().accent_2;
-        newBlock.pressedColor = Accents().secondary;
-        newBlock.selectedColor = Accents().tertiary;
+        newBlock.highlightedColor = Accents().buttonHighlighted;
+        newBlock.pressedColor = Accents().buttonPressed;
+        newBlock.selectedColor = Accents().buttonSelected;
+        newBlock.disabledColor = Accents().buttonInactive;
 
         return newBlock;
     }

@@ -30,10 +30,10 @@ public class ButtonColor : MonoBehaviour
         ColorBlock newColorBlock = button.colors;
 
         newColorBlock.normalColor = NewAccents().primary;
-        newColorBlock.highlightedColor = NewAccents().accent_2;
-        newColorBlock.pressedColor = NewAccents().secondary;
-        newColorBlock.selectedColor = NewAccents().tertiary;
-        newColorBlock.disabledColor = button.colors.disabledColor;
+        newColorBlock.highlightedColor = NewAccents().buttonHighlighted;
+        newColorBlock.pressedColor = NewAccents().buttonPressed;
+        newColorBlock.selectedColor = NewAccents().buttonSelected;
+        newColorBlock.disabledColor = NewAccents().buttonInactive;
 
         return newColorBlock;
     }

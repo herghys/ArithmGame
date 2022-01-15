@@ -17,6 +17,7 @@ public class GameData
     //public static string Metode { get => metode; set => metode = value; }
     #endregion
 }
+
 public enum MetodeBelajar
 {
     SENSING = 1,
@@ -25,3 +26,6 @@ public enum MetodeBelajar
     FEELING = 4,
     INSTING = 5,
 }
+
+public delegate void UpdateGameObjectState(GameObject @object);
+public delegate void UpdateString(string text);

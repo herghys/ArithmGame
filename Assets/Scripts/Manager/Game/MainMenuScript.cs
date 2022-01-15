@@ -1,3 +1,4 @@
+using UnityEngine;
 namespace Manager
 {
     public class MainMenuScript : Managers
@@ -6,6 +7,11 @@ namespace Manager
         {
             GameData.Metode = (MetodeBelajar)metode;
             base.GotoScene("MenuMateri");
+        }
+
+        public void InvokeUIChange(GameObject @object)
+        {
+            UIManagers.Instance.UpdateUI?.Invoke(@object);
         }
     }
 }

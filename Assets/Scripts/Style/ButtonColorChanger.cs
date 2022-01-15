@@ -8,6 +8,7 @@ public class ButtonColorChanger : ColorChanger
     [SerializeField] TextMeshProUGUI text;
     protected override void InitComponents()
     {
+        accents = Accents();
         if (button == null) button = GetComponent<Button>();
         if (text == null) text = GetComponentInChildren<TextMeshProUGUI>();
     }
@@ -15,11 +16,12 @@ public class ButtonColorChanger : ColorChanger
     protected virtual ColorBlock NewColorBlock()
     {
         ColorBlock newBlock = button.colors;
-        newBlock.normalColor = Accents().primary;
-        newBlock.highlightedColor = Accents().buttonHighlighted;
-        newBlock.pressedColor = Accents().buttonPressed;
-        newBlock.selectedColor = Accents().buttonSelected;
-        newBlock.disabledColor = Accents().buttonInactive;
+
+        newBlock.normalColor = accents.primary;
+        newBlock.highlightedColor = accents.buttonHighlighted;
+        newBlock.pressedColor = accents.buttonPressed;
+        newBlock.selectedColor = accents.buttonSelected;
+        newBlock.disabledColor = accents.buttonInactive;
 
         return newBlock;
     }

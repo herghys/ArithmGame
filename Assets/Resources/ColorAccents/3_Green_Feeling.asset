@@ -12,16 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb7322468298a364caef00d594a86bc8, type: 3}
   m_Name: 3_Green_Feeling
   m_EditorClassIdentifier: 
+  accentName: 
   primary: {r: 0.105882354, g: 0.36862746, b: 0.1254902, a: 1}
   secondary: {r: 0.18039216, g: 0.49019608, b: 0.19607843, a: 1}
-  tertiary: {r: 0.2627451, g: 0.627451, b: 0.2784314, a: 1}
-  accent_1: {r: 0.29803923, g: 0.6862745, b: 0.3137255, a: 1}
-  accent_2: {r: 0.4, g: 0.73333335, b: 0.41568628, a: 1}
-  accent_3: {r: 0.5058824, g: 0.78039217, b: 0.5176471, a: 1}
-  disabled: {r: 0.14901961, g: 0.19607843, b: 0.21960784, a: 0}
+  accent_1: {r: 0, g: 0.9019608, b: 0.4627451, a: 1}
   fontPrimary: {r: 0.9254902, g: 0.9411765, b: 0.94509804, a: 1}
-  fontSecondary: {r: 0, g: 0, b: 0, a: 0}
-  fontTertiary: {r: 0, g: 0, b: 0, a: 0}
-  fontAccent_1: {r: 0, g: 0, b: 0, a: 0}
-  fontAccent_2: {r: 0, g: 0, b: 0, a: 0}
-  fontAccent_3: {r: 0, g: 0, b: 0, a: 0}
+  fontSecondary: {r: 0.9254902, g: 0.9411765, b: 0.94509804, a: 1}
+  fontAccent_1: {r: 0.9254902, g: 0.9411765, b: 0.94509804, a: 1}
+  buttonHighlighted: {r: 0.2627451, g: 0.627451, b: 0.2784314, a: 1}
+  buttonPressed: {r: 0.2627451, g: 0.627451, b: 0.2784314, a: 1}
+  buttonSelected: {r: 0.21960784, g: 0.5568628, b: 0.23529412, a: 1}
+  buttonInactive: {r: 0.64705884, g: 0.8392157, b: 0.654902, a: 1}

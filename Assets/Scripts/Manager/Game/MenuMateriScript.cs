@@ -6,11 +6,13 @@ namespace Manager
 {
     public class MenuMateriScript : Managers
     {
-        [SerializeField] bool isContextActive = false;
-        public void InvokeUIChange(GameObject @object)
+        [SerializeField] int contextIndex = 0;
+        public void InvokeContextChange()
         {
-            isContextActive = !isContextActive;
-            UIManagers.Instance.UpdateUI?.Invoke(isContextActive);
+            if (contextIndex == 0) contextIndex = 1;
+            else if (contextIndex > 0) contextIndex = 0;
+
+            ContextManager.Instance.UpdateContext?.Invoke(contextIndex);
         }
     }
 }

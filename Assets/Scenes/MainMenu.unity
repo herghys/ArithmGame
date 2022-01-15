@@ -2469,7 +2469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13848c264c2aa734096ab90b7fb93ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isContextActive: 0
   contextIndex: 0
 --- !u!114 &1747867249
 MonoBehaviour:
@@ -2895,7 +2894,7 @@ PrefabInstance:
       objectReference: {fileID: 1747867248}
     - target: {fileID: 3510722628579369735, guid: a6b13836395528243a71bae587242aea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: InvokeUIChange
+      value: InvokeContextChange
       objectReference: {fileID: 0}
     - target: {fileID: 3510722628579369735, guid: a6b13836395528243a71bae587242aea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

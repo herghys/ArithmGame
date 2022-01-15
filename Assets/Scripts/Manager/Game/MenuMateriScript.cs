@@ -6,9 +6,11 @@ namespace Manager
 {
     public class MenuMateriScript : Managers
     {
-        private void Start()
+        [SerializeField] bool isContextActive = false;
+        public void InvokeUIChange(GameObject @object)
         {
-            Debug.Log(GameData.Metode);
+            isContextActive = !isContextActive;
+            UIManagers.Instance.UpdateUI?.Invoke(isContextActive);
         }
     }
 }

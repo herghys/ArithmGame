@@ -22,10 +22,16 @@ namespace Manager
             Instance = this;
         }
 
-        protected virtual void UIUpdated(GameObject @object)
+        protected virtual void UIUpdated(bool state) 
+        {
+            Debug.Log(state);
+            ContextTitleChanger.Instance.UpdateUI?.Invoke(state);
+        }
+
+        /*protected virtual void UIUpdated(GameObject @object)
         {
             @object.SetActive(!@object.activeSelf);
-        }
+        }*/
 
         protected virtual void SetTitle(string text)
         {

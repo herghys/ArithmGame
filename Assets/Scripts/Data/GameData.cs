@@ -27,5 +27,8 @@ public enum MetodeBelajar
     INSTING = 5,
 }
 
-public delegate void UpdateGameObjectState(GameObject @object);
+public delegate void UpdateGameObjectState(bool state);
+
 public delegate void UpdateString(string text);
+
+public delegate void UpdateContextUI(int index);

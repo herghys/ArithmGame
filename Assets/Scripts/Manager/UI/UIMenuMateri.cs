@@ -1,20 +1,25 @@
+using UnityEngine;
 namespace Manager {
     public class UIMenuMateri : UIManagers
     {
-        private void OnEnable()
+        [Header("UI")]
+        [SerializeField] Transform spawner;
+
+        [Header("References")]
+        [SerializeField] MenuMateriScript manager;
+        [SerializeField] GameObject prefab;
+
+        protected override void Awake()
         {
-            UpdateUI += UIUpdated;
-            UpdateTitle += SetTitle;
-        }
-        private void OnDisable()
-        {
-            UpdateUI -= UIUpdated;
-            UpdateTitle -= SetTitle;
+            Instance = this;
+
+            InstatiateMenu((int)manager.metode);
         }
 
-        private void Start()
+        private void InstatiateMenu(int i)
         {
-            UpdateTitle?.Invoke("Aritmetika Sosial");
+            prefab = manager.materiData[i-1].MenuMateriPrefab;
+            GameObject menu = Instantiate(prefab, spawner);
         }
     }
 }

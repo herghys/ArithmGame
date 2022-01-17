@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class GameData
 {
     static GameData() { }
@@ -26,9 +21,3 @@ public enum MetodeBelajar
     FEELING = 4,
     INSTING = 5,
 }
-
-public delegate void UpdateGameObjectState(bool state);
-
-public delegate void UpdateString(string text);
-
-public delegate void UpdateContextUI(int index);

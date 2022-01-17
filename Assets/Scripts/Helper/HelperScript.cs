@@ -34,3 +34,6 @@ public class HelperScript
     }
     #endregion
 }
+public delegate void UpdateString(string text);
+
+public delegate void UpdateContextUI(int index);

@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace Manager
 {
     public class MenuMateriScript : Managers
     {
-        [SerializeField] int contextIndex = 0;
-        public void InvokeContextChange()
-        {
-            if (contextIndex == 0) contextIndex = 1;
-            else if (contextIndex > 0) contextIndex = 0;
+        [SerializeField] internal MetodeBelajar metode;
+        [SerializeField] internal List<MateriData> materiData;
 
-            ContextManager.Instance.UpdateContext?.Invoke(contextIndex);
+        protected override void Awake()
+        {
+            Instance = this;
+            metode = GameData.Metode;
         }
     }
 }
